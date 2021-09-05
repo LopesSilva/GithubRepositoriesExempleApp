@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/card"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="4dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp">
+
+        <ImageView
+            android:id="@+id/profile_list_item_image_view"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:contentDescription="@string/profile_description_media"
+            android:padding="16dp"
+            android:scaleType="center"
+            android:src="@drawable/ic_baseline_person_24"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ic_baseline_person_24" />
+
+        <TextView
+            android:id="@+id/repository_name_list_item_text"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:gravity="start"
+            android:maxLines="1"
+            android:text="Repository Name"
+            android:textAppearance="?attr/textAppearanceSubtitle1"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@+id/profile_list_item_image_view"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/repository_description_list_item_text"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:ellipsize="end"
+            android:gravity="start"
+            android:maxLines="2"
+            android:paddingEnd="16dp"
+            android:text="@string/repository_description_that_can_be_quite_long_but_a_maximum_of_two_lines"
+            android:textAppearance="?attr/textAppearanceBody2"
+            android:textColor="@color/black"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/repository_name_list_item_text"
+            app:layout_constraintTop_toBottomOf="@+id/repository_name_list_item_text" />
+
+        <TextView
+            android:id="@+id/repository_owner_name_list_item_text"
+            android:layout_width="60dp"
+            android:layout_height="0dp"
+            android:gravity="center"
+            android:text="@string/user_name"
+            android:textSize="12sp"
+            app:layout_constraintStart_toStartOf="@+id/profile_list_item_image_view"
+            app:layout_constraintTop_toBottomOf="@+id/profile_list_item_image_view" />
+
+        <TextView
+            android:id="@+id/repository_forks_list_item_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:numeric="integer"
+            android:text="@string/starts_999"
+            android:textColor="@color/gold"
+            android:textStyle="bold"
+            app:drawableLeftCompat="@drawable/ic_round_account_tree_24"
+            app:drawableTint="@color/gold"
+            app:layout_constraintStart_toStartOf="@+id/repository_description_list_item_text"
+            app:layout_constraintTop_toBottomOf="@+id/repository_description_list_item_text"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <TextView
+            android:id="@+id/repository_stars_list_item_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:numeric="integer"
+            android:text="@string/pull_999"
+            android:textColor="@color/gold"
+            android:textStyle="bold"
+            app:drawableLeftCompat="@drawable/ic_baseline_star_24"
+            app:drawableTint="@color/gold"
+            app:layout_constraintStart_toEndOf="@+id/repository_forks_list_item_text"
+            app:layout_constraintTop_toBottomOf="@+id/repository_description_list_item_text"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <TextView
+            android:id="@+id/repository_data_item_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/timestamp_exemple"
+            app:layout_constraintEnd_toEndOf="@+id/repository_description_list_item_text"
+            app:layout_constraintTop_toBottomOf="@+id/repository_description_list_item_text" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</com.google.android.material.card.MaterialCardView>
+

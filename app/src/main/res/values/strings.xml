@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">Github Repositories App</string>
+    <string name="action_settings">Settings</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="profile_description_media">Profile picture of repository owner</string>
+    <string name="repository_description_that_can_be_quite_long_but_a_maximum_of_two_lines">Repository description that can be quite long, but a maximum of two lines. ddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd</string>
+    <string name="user_name">User Name</string>
+    <string name="starts_999">999</string>
+    <string name="pull_999">999</string>
+    <string name="timestamp_exemple">25/03/1996 15h:20mm</string>
+    <string name="fragment_pull_requests_name">Pull Requests</string>
+    <string name="sucess_message">Atualizado!</string>
+    <string name="generic_error">Generic Error</string>
+    <string name="fragment_repos_title">Repositórios JAVA</string>
+    <string name="success">Atualizado!</string>
+</resources>
